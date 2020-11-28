@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Hunger</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preload" href="font/banny-boldround-ext-latin.woff2" as="font" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <header class="page-header">
+    <div class="container">
+      <div class="page-header__wrapper">
+        <div class="page-header__top">
+          <a class="page-header__logo">
+            <img src="img/logo.svg" width="140" height="140" alt="Hunger">
+          </a>
+          <button class="page-header__toggle-menu page-header__toggle-menu--closed" type="button">
+            <span class="visually-hidden">Open menu</span>
+          </button>
+        </div>
+        <nav class="page-header__nav">
+          <ul class="main-nav main-nav--closed">
+            <li class="main-nav__item"><a href="#menu" class="main-nav__link anchor">Menu</a></li>
+            <li class="main-nav__item"><a href="/" class="main-nav__link">About</a></li>
+            <li class="main-nav__item"><a href="/" class="main-nav__link">Team</a></li>
+            <li class="main-nav__item"><a href="#booking" class="main-nav__link anchor">Booking</a></li>
+            <li class="main-nav__item"><a href="#menu" class="main-nav__link anchor">Menu</a></li>
+            <li class="main-nav__item"><a href="/" class="main-nav__link">Galerie</a></li>
+            <li class="main-nav__item"><a href="#events" class="main-nav__link anchor">Events</a></li>
+            <li class="main-nav__item"><a href="/" class="main-nav__link">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="page-header__main banner">
+          <p class="banner__info">Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM</p>
+          <div class="banner__hero">
+            <h1 class="main-heading line"><span class="main-heading--less">RESTAURANT</span> <br> hungry people</h1>
+            <div class="banner__actions">
+              <a class="button button--main booking-link anchor"  href="#booking">Book table</a>
+              <a class="button button--ghost promo-link anchor" href="#promo">Explore</a>
+            </div>
+          </div>
+          <ul class="banner__social social">
+            <li class="social__item">
+              <a class="social__link" href="https://facebook.com">
+                <svg width="11" height="19">
+                  <use xlink:href="img/sprite-svg.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="https://twitter.com">
+                <svg width="20" height="16">
+                  <use xlink:href="img/sprite-svg.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="https://instagram.com">
+                <svg width="17" height="17">
+                  <use xlink:href="img/sprite-svg.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <a class="button-down anchor" href="#booking"><span class="visually-hidden">To booking</span></a>
+      </div>
+      <div class="timer">
+        Left:<span class="timer__value"> 14:00</span>
+      </div>
+    </div>
+  </header>
+  <main class="page-main">
+    <div class="book" id="booking">
+      <div class="container">
+        <div class="columns">
+          <section class="book__col">
+            <h2 class="section-heading line">book a table</h2>
+            <form class="book__form form" action="/" method="post">
+              <div class="form__row">
+                <input class="form__filed" type="text" name="name" id="user-name" placeholder="Name">
+                <input class="form__filed" type="email" name="email" id="user-email" placeholder="Email">
+              </div>
+              <div class="form__row">
+                <input class="form__filed" type="tel" name="phone" id="user-phone" placeholder="Phone">
+                <div class="form__filed form__filed--select">
+                  <select>
+                    <option value="0">People</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                  </select>
+                  <span class="focus"></span>
+                </div>
+              </div>
+              <div class="form__row">
+                <input class="form__filed" type="text" name="date" id="form-date" placeholder="Date (mm/dd)">
+                <div class="form__filed form__filed--select">
+                  <select>
+                    <option value="0">Time</option>
+                    <option value="19">19:00</option>
+                    <option value="20">20:00</option>
+                  </select>
+                  <span class="focus"></span>
+                </div>
+              </div>
+              <button class="button button--main button--big" type="submit">BOOK NOW</button>
+            </form>
+          </section>
+          <div class="image-col image-col--right image-col--book">
+            <img class="image-col__picture" src="img/book.jpg" width="443" height="443" alt="Clocks">
+          </div>
+        </div>
+        <p class="book__info">Mon - Fri:
+          <span class="book__info--bold">8PM - 10PM</span>, Sat - Sun:
+          <span class="book__info--bold">8PM - 3AM</span>, Phone:
+          <span class="book__info--bold">+40 729 131 637/+40 726 458 782</span>
+        </p>
+      </div>
+    </div>
+    <div class="promo" id="promo">
+        <div class="promo-slider">
+          <div class="promo-slider__item promo-slider__item--item-1">
+            <div class="container">
+              <section class="promo__wrapper">
+                <h2 class="main-heading--less main-heading--promo">specialties</h2>
+                <div class="columns">
+                  <div class="image-col image-col--left image-col--promo">
+                    <img class="image-col__picture" src="img/slider-img-1.jpg" width="443" height="443" alt="chocolate pancakes">
+                  </div>
+                  <div class="promo-slider__desription">
+                    <h3 class="section-heading section-heading--white line">chocolate pancakes</h3>
+                    <p class="promo-slider__text--mian">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.
+                    </p>
+                    <p class="promo-slider__text">
+                      Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.
+                    </p>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+          <div class="promo-slider__item promo-slider__item--item-2">
+            <div class="container">
+              <section class="promo__wrapper">
+                <h2 class="main-heading--less main-heading--promo">specialties</h2>
+                <div class="columns">
+                  <div class="image-col image-col--left image-col--promo">
+                    <img class="image-col__picture" src="img/book.jpg" width="443" height="443" alt="chocolate pancakes">
+                  </div>
+                  <div class="promo-slider__desription">
+                    <h3 class="section-heading section-heading--white line">chocolate pancakes 2</h3>
+                    <p class="promo-slider__text--mian">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.
+                    </p>
+                    <p class="promo-slider__text">
+                      Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.
+                    </p>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+          <div class="promo-slider__item promo-slider__item--item-3">
+            <div class="container">
+              <section class="promo__wrapper">
+                <h2 class="main-heading--less main-heading--promo">specialties</h2>
+                <div class="columns">
+                  <div class="image-col image-col--left image-col--promo">
+                    <img class="image-col__picture" src="img/slider-img-1.jpg" width="443" height="443" alt="chocolate pancakes">
+                  </div>
+                  <div class="promo-slider__desription">
+                    <h3 class="section-heading section-heading--white line">chocolate pancakes 3</h3>
+                    <p class="promo-slider__text--mian">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.
+                    </p>
+                    <p class="promo-slider__text">
+                      Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.
+                    </p>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+          <div class="promo-slider__radio-switcher">
+            <button class="promo-slider__radio-switcher-item  promo-slider__radio-switcher-item--active" aria-label="First slide">
+              <svg width="10" height="10">
+                <use xlink:href="img/sprite-svg.svg#icon-circle"></use>
+              </svg>
+            </button>
+            <button class="promo-slider__radio-switcher-item" aria-label="Second slide">
+              <svg width="10" height="10">
+                <use xlink:href="img/sprite-svg.svg#icon-circle"></use>
+              </svg>
+            </button>
+            <button class="promo-slider__radio-switcher-item" aria-label="Third slide">
+              <svg width="10" height="10">
+                <use xlink:href="img/sprite-svg.svg#icon-circle"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+    </div>
+    <section class="menu" id="menu">
+      <div class="container">
+        <h2 class="section-heading line">
+          DELICIOUS MENU
+        </h2>
+        <p class="menu__descr">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis <br>
+          at velit maximus, molestie est a, tempor magna.
+        </p>
+        <ul class="menu__categories tabs-list">
+          <li class="tabs-list__item"><a href="#" class="tabs-list__link">SOUPE</a></li>
+          <li class="tabs-list__item"><a href="#" class="tabs-list__link">PIZZA</a></li>
+          <li class="tabs-list__item"><a href="#" class="tabs-list__link">PASTA</a></li>
+          <li class="tabs-list__item"><a href="#" class="tabs-list__link">DESERT</a></li>
+          <li class="tabs-list__item"><a href="#" class="tabs-list__link">WINE</a></li>
+          <li class="tabs-list__item"><a href="#" class="tabs-list__link">BEER</a></li>
+          <li class="tabs-list__item"><a href="#" class="tabs-list__link">DRINKS</a></li>
+        </ul>
+        <ul class="menu__items-list">
+          <li class="menu__items-list__item">
+            <dl class="items-list__product">
+              <dt class="items-list__name">PIZZA QUATRO STAGIONI  . . . . </dt>
+              <dd class="items-list__price">55,68 USD</dd>
+            </dl>
+            <p class="items-list__descr">Integer ullamcorper neque eu purus euismod</p>
+          </li>
+          <li class="menu__items-list__item">
+            <dl class="items-list__product">
+              <dt class="items-list__name">PIZZA QUATRO STAGIONI  . . . . </dt>
+              <dd class="items-list__price">55,68 USD</dd>
+            </dl>
+            <p class="items-list__descr">Integer ullamcorper neque eu purus euismod</p>
+          </li>
+          <li class="menu__items-list__item">
+            <dl class="items-list__product">
+              <dt class="items-list__name">PIZZA QUATRO STAGIONI  . . . . </dt>
+              <dd class="items-list__price">55,68 USD</dd>
+            </dl>
+            <p class="items-list__descr">Integer ullamcorper neque eu purus euismod</p>
+          </li>
+          <li class="menu__items-list__item">
+            <dl class="items-list__product">
+              <dt class="items-list__name">PIZZA QUATRO STAGIONI  . . . . </dt>
+              <dd class="items-list__price">55,68 USD</dd>
+            </dl>
+            <p class="items-list__descr">Integer ullamcorper neque eu purus euismod</p>
+          </li>
+          <li class="menu__items-list__item">
+            <dl class="items-list__product">
+              <dt class="items-list__name">PIZZA QUATRO STAGIONI  . . . . </dt>
+              <dd class="items-list__price">55,68 USD</dd>
+            </dl>
+            <p class="items-list__descr">Integer ullamcorper neque eu purus euismod</p>
+          </li>
+          <li class="menu__items-list__item">
+            <dl class="items-list__product">
+              <dt class="items-list__name">PIZZA QUATRO STAGIONI  . . . . </dt>
+              <dd class="items-list__price">55,68 USD</dd>
+            </dl>
+            <p class="items-list__descr">Integer ullamcorper neque eu purus euismod</p>
+          </li>
+          <li class="menu__items-list__item">
+            <dl class="items-list__product">
+              <dt class="items-list__name">PIZZA QUATRO STAGIONI  . . . . </dt>
+              <dd class="items-list__price">55,68 USD</dd>
+            </dl>
+            <p class="items-list__descr">Integer ullamcorper neque eu purus euismod</p>
+          </li>
+          <li class="menu__items-list__item">
+            <dl class="items-list__product">
+              <dt class="items-list__name">PIZZA QUATRO STAGIONI  . . . . </dt>
+              <dd class="items-list__price">55,68 USD</dd>
+            </dl>
+            <p class="items-list__descr">Integer ullamcorper neque eu purus euismod</p>
+          </li>
+          <li class="menu__items-list__item">
+            <dl class="items-list__product">
+              <dt class="items-list__name">PIZZA QUATRO STAGIONI  . . . . </dt>
+              <dd class="items-list__price">55,68 USD</dd>
+            </dl>
+            <p class="items-list__descr">Integer ullamcorper neque eu purus euismod</p>
+          </li>
+          <li class="menu__items-list__item">
+            <dl class="items-list__product">
+              <dt class="items-list__name">PIZZA QUATRO STAGIONI  . . . . </dt>
+              <dd class="items-list__price">55,68 USD</dd>
+            </dl>
+            <p class="items-list__descr">Integer ullamcorper neque eu purus euismod</p>
+          </li>
+          <li class="menu__items-list__item">
+            <dl class="items-list__product">
+              <dt class="items-list__name">PIZZA QUATRO STAGIONI  . . . . </dt>
+              <dd class="items-list__price">55,68 USD</dd>
+            </dl>
+            <p class="items-list__descr">Integer ullamcorper neque eu purus euismod</p>
+          </li>
+          <li class="menu__items-list__item">
+            <dl class="items-list__product">
+              <dt class="items-list__name">PIZZA QUATRO STAGIONI  . . . . </dt>
+              <dd class="items-list__price">55,68 USD</dd>
+            </dl>
+            <p class="items-list__descr">Integer ullamcorper neque eu purus euismod</p>
+          </li>
+          <li class="menu__items-list__item">
+            <dl class="items-list__product">
+              <dt class="items-list__name">PIZZA QUATRO STAGIONI  . . . . </dt>
+              <dd class="items-list__price">55,68 USD</dd>
+            </dl>
+            <p class="items-list__descr">Integer ullamcorper neque eu purus euismod</p>
+          </li>
+          <li class="menu__items-list__item">
+            <dl class="items-list__product">
+              <dt class="items-list__name">PIZZA QUATRO STAGIONI  . . . . </dt>
+              <dd class="items-list__price">55,68 USD</dd>
+            </dl>
+            <p class="items-list__descr">Integer ullamcorper neque eu purus euismod</p>
+          </li>
+          <li class="menu__items-list__item">
+            <dl class="items-list__product">
+              <dt class="items-list__name">PIZZA QUATRO STAGIONI  . . . . </dt>
+              <dd class="items-list__price">55,68 USD</dd>
+            </dl>
+            <p class="items-list__descr">Integer ullamcorper neque eu purus euismod</p>
+          </li>
+          <li class="menu__items-list__item">
+            <dl class="items-list__product">
+              <dt class="items-list__name">PIZZA QUATRO STAGIONI  . . . . </dt>
+              <dd class="items-list__price">55,68 USD</dd>
+            </dl>
+            <p class="items-list__descr">Integer ullamcorper neque eu purus euismod</p>
+          </li>
+          <li class="menu__items-list__item">
+            <dl class="items-list__product">
+              <dt class="items-list__name">PIZZA QUATRO STAGIONI  . . . . </dt>
+              <dd class="items-list__price">55,68 USD</dd>
+            </dl>
+            <p class="items-list__descr">Integer ullamcorper neque eu purus euismod</p>
+          </li>
+          <li class="menu__items-list__item">
+            <dl class="items-list__product">
+              <dt class="items-list__name">PIZZA QUATRO STAGIONI  . . . . </dt>
+              <dd class="items-list__price">55,68 USD</dd>
+            </dl>
+            <p class="items-list__descr">Integer ullamcorper neque eu purus euismod</p>
+          </li>
+          <li class="menu__items-list__item">
+            <dl class="items-list__product">
+              <dt class="items-list__name">PIZZA QUATRO STAGIONI  . . . . </dt>
+              <dd class="items-list__price">55,68 USD</dd>
+            </dl>
+            <p class="items-list__descr">Integer ullamcorper neque eu purus euismod</p>
+          </li>
+          <li class="menu__items-list__item">
+            <dl class="items-list__product">
+              <dt class="items-list__name">PIZZA QUATRO STAGIONI  . . . . </dt>
+              <dd class="items-list__price">55,68 USD</dd>
+            </dl>
+            <p class="items-list__descr">Integer ullamcorper neque eu purus euismod</p>
+          </li>
+          <li class="menu__items-list__item">
+            <dl class="items-list__product">
+              <dt class="items-list__name">PIZZA QUATRO STAGIONI  . . . . </dt>
+              <dd class="items-list__price">55,68 USD</dd>
+            </dl>
+            <p class="items-list__descr">Integer ullamcorper neque eu purus euismod</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="features" id="events">
+      <div class="container">
+        <div class="features__wrapper">
+          <h2 class="main-heading--less main-heading--promo">PRIVATE EVENTS</h2>
+          <div class="columns">
+            <div class="image-col image-col--left image-col--features">
+              <img class="image-col__picture" src="img/weddings.jpg" width="443" height="443" alt="weddings">
+              <div class="image-col__caption image-col__caption--right">weddings</div>
+            </div>
+            <div class="image-col image-col--right image-col--features">
+              <img class="image-col__picture" src="img/corporate.jpg" width="443" height="443" alt="corporate pzrties">
+              <div class="image-col__caption image-col__caption--left">corporate pzrties</div>
+            </div>
+          </div>
+          <p class="features__info">For private events please call:
+            <span class="features__info--bold">+40 729 131 637/+40 726 458 782</span>
+            or use the contact form.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="js/svgxuse.min.js"></script>
+  <script src="js/smoothscroll.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+</html>
